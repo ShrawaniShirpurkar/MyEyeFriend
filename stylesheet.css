@@ -1,0 +1,512 @@
+body{
+  font-family: "Roboto";
+}
+/*==== ADA CSS ====*/
+*:focus-visible, 
+.custom-checkbox:focus-within,
+.custom-radio-btn .radio-btn:focus-within,
+.selectColorBtn:focus-within{
+outline: 2px solid #000000 !important;
+box-shadow: 0 0px 0px 2px #000000 !important;
+outline: -webkit-focus-ring-color auto 1px !important;
+}
+
+*:focus:not(:focus-visible), 
+.custom-checkbox:focus:not(:focus-within) .checkmark{
+outline: 0 !important;
+box-shadow: none !important;
+outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+/* sidebar */
+/* The sidepanel menu */
+.sidepanel {
+  height: 250px;
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #130f40;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  height: 100%;
+}
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: #130f40 !important;
+  border: none;
+}
+/* sidebar */
+/* login Page CSS */
+#login-card{
+  width:480px;
+  border-radius: 10px;
+  margin:150px auto;
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+#body #username{
+  margin-bottom: 17px;
+}
+#body .form-control{
+  border-radius: 5px;
+  background-color: #ebf0fc;
+  border-color: #ebf0fc;
+  color: #9da3b0;
+  padding: 10px;
+}
+#button{
+  border-radius: 5px;
+  width: 100%;
+  background-color: #130f40 !important;
+  border: 1px solid #130f40 !important;
+  padding: 10px;
+  margin-top: 15px;
+}
+.login-wrapper{
+  position: relative;
+}
+.login_img{
+  width: 100%;
+  height: 100vh;
+}
+.card {
+  background: transparent !important;
+}
+.card-body{
+  z-index: 9;
+  padding: 50px 20px;
+}
+.card-body h2 {
+  /* color: #fff; */
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#login-card::before{
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1.1;
+  border-radius: 10px;
+}
+.formbold-form-wrapper input, button.formbold-btn, .formbold-form-wrapper textarea {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+#btn{
+  position: absolute;
+  bottom: -35px;
+  padding: 5px;
+  margin: 0px 55px;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 323px;
+}
+#container{
+  margin-top:25px;
+}
+.btn-circle.btn-sm {
+  width: 40px;
+  height: 40px;
+  padding: 2px 0px;
+  border-radius: 25px;
+  font-size: 14px;
+  text-align: center;
+  margin: 8px;
+}
+/* login Page CSS end */
+.header .navbar, .footer{
+  background-color:#130f40;
+}
+.footer{
+  padding: 20px 10px;
+}
+.navbrand #icon{
+  margin-right: 10px;
+}
+.navbar{
+  padding: 15px 0;
+}
+.header .navbar-brand, .footer .navbar-brand, .navbrand #icon{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-link{
+  color: #fff;
+}
+.nav-link:hover{
+  color: #fff;
+  font-weight: 700;
+}
+/* search css */
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+/* search css end */
+.banner-img img{
+  width:100%;
+  height: auto;
+}
+.banner-img{
+  position: relative;
+}
+.banner-info{
+  position: absolute;
+  top:40%;
+  text-align: center;
+}
+.banner-info p {
+  color: #bb5304;
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+.banner-info h4 {
+  color: #2e2585;
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+.banner-info a{
+  background: #130f40;
+  color: #fff;
+  padding: 10px 35px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 27px;
+  box-sizing: border-box;
+  border: 1px solid #130f40;
+  border-radius: 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+}
+.treatment-head {
+ padding: 30px 10px;
+}
+.treat-info img{
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+p.treat-name {
+  font-weight: 700;
+  font-size: 25px !important;
+}
+p.treat-disc{
+  font-size: 14px !important;
+}
+.treat-info a{
+  text-decoration: none !important;
+  margin-bottom: 30px;
+}
+.theme-btn[type="button"]{
+  background-color: #130f40;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: 1px solid #130f40;
+  border-radius: 10px;
+  width: 330px;
+}
+.product-slider .theme-btn[type="button"] {
+  background-color: #130f40;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: 1px solid #130f40;
+  border-radius: 10px;
+  width: 140px;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.treat-info p{
+  color: #000;
+  padding: 0 35px; 
+  text-align: left; 
+}
+/* appointment booking form css */
+.book_appointment{
+  padding: 30px 10px 0px;
+}
+.formbold-mb-5 {
+  margin-bottom: 20px;
+}
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #130f40;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .sm\:w-half {
+      width: 50%;
+ }
+}
+/* appointment booking form css end*/
+/* slider home css */
+.owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+.owl-carousel .owl-item img{
+  height: 311px;
+  object-fit: contain;
+}
+/* slider home css end */
+
+/* our mission */
+.our-mission img{
+  width: 100%;
+}
+.our-mission .row{
+  justify-content: center;
+}
+.our-mission{
+  margin-top: 50px;
+}
+.mission-disc p{
+  font-size: 20px;
+}
+.mission-disc {
+  width: 100%;
+  max-width: 552px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+p.mission-foot {
+  margin-top: 25px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.exp-mission{
+  padding: 30px 0px;
+  background-color: #130f40;
+  color: #fff;
+  margin-top: 30px;
+}
+.exp-mission p{
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.book_appointment_bg{
+  background: url(../MyEyeFriend/images/login.jfif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.formbold-form-wrapper form {
+  background-color: transparent !important;
+}
+.treat-info-wrap {
+  background: #ddd;
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 490px;
+  border-bottom: 30px solid #130f40;
+}
+.product-slider {
+  background: #f7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+.owl-item.active img {
+  border: 5px solid #130f40;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+  display: block;
+}
+button.owl-prev{
+  position: absolute;
+  left: -25px;
+  top: 35%;
+  font-size: 53px !important;
+}
+button.owl-next{
+  position: absolute;
+  right: -25px;
+  top: 35%;
+  font-size: 53px !important;
+}
+/* our mission end */
+/* #e67, #ff5f00 , #bbb, #2e2585, #cc79a7, d55e00, e69f00, #B9E192 */

@@ -1,0 +1,5 @@
+{
+    "code-runner.enableAppInsights": true,
+    "javascript.preferences.useAliasesForRenames": true,
+    "typescript.preferences.useAliasesForRenames": true
+}

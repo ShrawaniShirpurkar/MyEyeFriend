@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- fontawasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js" integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  
+  
+  <!-- stylesheet -->
+  <link href="./stylesheet.css" rel="stylesheet">
+  <title>MyEyeFriend</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+            <div class="navbrand">
+              <a href="#" class="openbtn" onclick="openNav()"><i class="fas fa-bars"  id="icon"></i> </a>
+              <a class="navbar-brand">
+              BeMyEye</a></div>
+            <div class="search-box">
+              <button class="btn-search"><i class="fas fa-search"></i></button>
+              <input type="text" class="input-search" placeholder="Type to Search...">
+            </div>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+  </div>
+  <div class="banner-img">
+    <img src="./images/banner_img.webp">
+    <div class="container">
+      <div class="banner-info">
+        <p>We Care</p>
+        <h4>For Your Eyes</h4>
+        <a href="./book_appointment.html" class="btn-book">Book Appointment</a>
+      </div>
+    </div>
+  </div>
+  <div class="our-mission text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mission-head">
+            <h1>Our Mission</h1>
+          </div>
+          <div class="mission-disc">
+            <p>To make available to every individual, the best quality of health care treatments and solutions irrespective of their awareness, knowledge and financial status.</p>
+          </div>
+          <img src="./images/Hands.webp">
+          <p class="mission-foot">Enhancing Vision. Touching Lives.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-mission">
+      <div class="container">
+        <p>Being one of the best eye hospital Chain in India, ASG Eye Hospital provides state-of-the-art Ophthalmology services in Cataract Surgery, Diabetic Retinopathy, Cornea, Glaucoma, Neuro-Ophthalmology, Oculoplasty, Pediatric Ophthalmology, Refractive Surgeries, Retina Surgery, Lasik Surgery, Contoura Lasik, ICL Surgery, PRK Surgery</p>
+      </div>
+    </div>
+  </div>
+  <div class="treatment-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="treatment-head text-center">
+            <h1>Treatment For</h1>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center treat-info">
+          <div class="treat-info-wrap">
+            <a href="#">
+              <img src="./images/cataract_tretment_img.webp">
+              <p class="treat-name">Cataract Treatment</p>
+              <p class="treat-disc">We are widely recognized for excellence in providing cataract treatment & surgery. With successful cataract treatment your vision will be clearer, brighter and sharper just like before. Being one of the best eye hospital in India.</p>
+              <a href="#" type="button" class="theme-btn" class="theme-btn">Enquire More</a>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center treat-info">
+          <div class="treat-info-wrap">
+            <a href="#">
+              <img src="./images/cornea_img.jpg">
+              <p class="treat-name">Cornea Treatment</p>
+              <p class="treat-disc">Minor corneal infections are usually treated with antibacterial eye drops. If the problem is severe, it may require more intensive antibiotic or anti fungal treatment to eliminate the infection, as well as steroid eye drops to reduce inflammation.</p>
+              <a href="#" type="button" class="theme-btn">Enquire More</a>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center treat-info">
+          <div class="treat-info-wrap">
+            <a href="#">
+              <img src="./images/lasick_surgery.webp">
+              <p class="treat-name">Glaucoma Treatment</p>
+              <p class="treat-disc">Glaucoma can be treated with eye drops, pills, laser surgery, traditional surgery or a combination of these methods. The goal of any treatment is to prevent loss of vision, as vision loss from glaucoma is irreversible.</p>
+              <a href="#" type="button" class="theme-btn">Enquire More</a>
+            </a>
+          </div>
+        </div>
+       <div class="col-lg-4 text-center treat-info">
+          <div class="treat-info-wrap">
+            <a href="#">
+              <img src="./images/padriatic_opthomology_img.webp">
+              <p class="treat-name">Refractive Surgery</p>
+              <p class="treat-disc">Refractive eye surgery improves the refractive state of the eye and decreases or eliminates dependency on glasses or contact lenses. This can include various methods of surgical remodeling of the cornea or cataract surgery.</p>
+              <a href="#" type="button" class="theme-btn">Enquire More</a>
+            </a>
+          </div>
+        </div>
+       <div class="col-lg-4 text-center treat-info">
+          <div class="treat-info-wrap">
+            <a href="#">
+              <img src="./images/retina_img.webp">
+              <p class="treat-name">Retina Treatment</p>
+              <p class="treat-disc">The retina is a thin layer of tissue that lines the back of the eye on the inside. The purpose of the retina is to receive light that the lens has focused, convert the light into neural signals and send these signals to the brain for visual recognition.</p>
+              <a href="#" type="button" class="theme-btn">Enquire More</a>
+            </a>
+          </div>
+        </div>
+       <div class="col-lg-4 text-center treat-info">
+        <div class="treat-info-wrap">
+          <a href="#">
+            <img src="./images/refractive_surgery.webp">
+            <p class="treat-name">Paediatric Ophthalmology</p>
+            <p class="treat-disc">Our pediatric ophthalmology department is a highly specialized, niche & advanced eye care facility offering expert diagnosis and treatment for the entire gamut of ophthalmic problems in children of various age groups.</p>
+            <a href="#" type="button" class="theme-btn">Enquire More</a>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-slider">
+    <div class="container">
+      <h1>You May Also like</h1>
+      <div class="owl-carousel">
+        <div><img src="./images/eye_cream.jpg" alt="">
+        <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+        <div><img src="./images/eye_drop.webp" alt="">
+          <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+        <div><img src="./images/eye_glass.jfif" alt="">
+          <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+        <div><img src="./images/eye_patch.jfif" alt="">
+          <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+        <div><img src="./images/stick.jpg" alt="">
+          <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+        <div><img src="./images/vision_care_vitamins.webp" alt="">
+          <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+        <div><img src="./images/wrist_band.png" alt="">
+          <a href="#" class="theme-btn" type="button">Buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer text-center">
+    <div class="container">
+      <a class="navbar-brand">BeMyEye</a>
+    </div>
+  </div>
+
+  <script>
+
+    /* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "300px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+} 
+
+    var $owl = $('.owl-carousel');
+
+$owl.children().each( function( index ) {
+  $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+});
+
+$owl.owlCarousel({
+  // center: true,
+  loop: true,
+  items: 4,
+  arrow: true,
+});
+
+$(document).on('click', '.owl-item>div', function() {
+  // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+  var $speed = 300;  // in ms
+  $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
+});
+  </script>
+  <script>
+    let tags = document.querySelectorAll('h2,p,div,input,a')
+    let msg = new SpeechSynthesisUtterance();
+    tags.forEach( (tag) => {
+        tag.addEventListener( "keyup" , (e) =>{
+          msg.text = $(e.target).val();
+          speechSynthesis.speak(msg);
+          //console.log($(e.target).val())
+        });
+    });
+  </script>
+</body>
+
+</html>
